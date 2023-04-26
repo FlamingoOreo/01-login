@@ -13,6 +13,6 @@ router.get('/profile', requiresAuth(), function (req, res, next) {
     userProfile: JSON.stringify(req.oidc.user, null, 2),
     title: 'Profile page'
   });
-});
+})
 
 module.exports = router;
